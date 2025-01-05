@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" stylesheets="/sellPlayersDialog.css" fx:controller="controllers.SellPlayersDialogController">
+    <Label text="Select Players to Sell" style="-fx-font-size: 24px;" />
+    <TableView fx:id="sellPlayerTable" prefHeight="500" prefWidth="750">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Name" prefWidth="120" />
+            <TableColumn fx:id="ageColumn" text="Age" prefWidth="80" />
+            <TableColumn fx:id="heightColumn" text="Height" prefWidth="80" />
+            <TableColumn fx:id="positionColumn" text="Position" prefWidth="80" />
+            <TableColumn fx:id="jerseyNumberColumn" text="Jersey Number" prefWidth="80" />
+            <TableColumn fx:id="clubColumn" text="Club" prefWidth="120" />
+            <TableColumn fx:id="countryColumn" text="Country" prefWidth="120" />
+            <TableColumn fx:id="weeklySalaryColumn" text="Weekly Salary" prefWidth="120" />
+        </columns>
+    </TableView>
+    <Button text="OK" onAction="#onConfirmSelection" style="-fx-background-color: #27ae60; -fx-text-fill: white;" />
+</VBox>

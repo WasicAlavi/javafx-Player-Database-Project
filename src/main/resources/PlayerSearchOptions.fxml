@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefWidth="600" prefHeight="400" spacing="15" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22.0" fx:controller="controllers.MainMenuController">
+    <Label text="Cricket Player Database" style="-fx-font-size: 24px; -fx-font-weight: bold;">
+        <font>
+            <Font name="Academy Engraved LET Plain:1.0" size="22.0" />
+        </font>
+    </Label>
+
+    <ComboBox fx:id="searchOptionsDropdown" prefWidth="200" promptText="Select Search Option" />
+
+    <Button fx:id="searchPlayersButton" onAction="#onSearchPlayers" text="Search Players" prefWidth="150" />
+
+    <Button onAction="#onSearchClubs" text="Search Clubs" prefWidth="150" />
+
+    <Button onAction="#onAddPlayer" text="Add Player" prefWidth="150" />
+
+    <Button onAction="#onExitSystem" text="Exit System" prefWidth="150" />
+</VBox>

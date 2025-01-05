@@ -1,0 +1,30 @@
+/* General Button Style */
+.button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 0;
+    -fx-border-radius: 5px;
+    -fx-border-color: transparent;
+}
+
+/* Gradient Background for Login Button */
+#loginButton {
+    -fx-background-color: linear-gradient(to right, #53d310, #2ecc71); /* Blue to Green Gradient */
+}
+
+/* Gradient Background for Guest Button */
+#guestButton {
+    -fx-background-color: linear-gradient(to right, #28d3da, #3498db); /* Green to Blue Gradient */
+}
+
+/* Gradient Background for Exit Button */
+#exitButton {
+    -fx-background-color: linear-gradient(to right, #e74c3c, #c0392b); /* Red to Dark Red Gradient */
+}
+
+/* Hover Effect for Buttons */
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0, 0);
+}

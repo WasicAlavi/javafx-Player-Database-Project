@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" spacing="10" style="-fx-background-image: url('/first_part.png'); -fx-background-size: cover; -fx-background-position: center;"  xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlayerSearchClubCountryController">
+
+    <!-- Back Button (Top Left) -->
+    <HBox alignment="TOP_LEFT" spacing="10" style="-fx-padding: 10;">
+        <Button onAction="#onBack" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 5;" text="Back">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin></Button>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+    </HBox>
+
+    <!-- Title -->
+    <Label alignment="CENTER" prefHeight="30.0" prefWidth="300.0" style=" -fx-text-fill: #ffffff;" text="Search By Club and Country" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+
+    <!-- TextFields for Club and Country -->
+    <HBox alignment="CENTER" spacing="10">
+        <TextField fx:id="clubField" prefWidth="200" promptText="Enter club here..." />
+        <TextField fx:id="countryField" prefWidth="200" promptText="Enter country here..." />
+        <Button onAction="#onSearch" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 5;" text="Search" />
+    </HBox>
+
+    <!-- TableView -->
+    <TableView fx:id="resultsTable" opacity="0.89" prefHeight="350" prefWidth="700">
+        <columns>
+            <TableColumn fx:id="numberColumn" prefWidth="100.0" text="Number" />
+            <TableColumn fx:id="nameColumn" prefWidth="100.0" text="Name" />
+            <TableColumn fx:id="ageColumn" prefWidth="100.0" text="Age" />
+            <TableColumn fx:id="heightColumn" prefWidth="100.0" text="Height" />
+            <TableColumn fx:id="positionColumn" prefWidth="100.0" text="Position" />
+            <TableColumn fx:id="jerseyNumberColumn" prefWidth="100.0" text="Jersey Number" />
+            <TableColumn fx:id="countryColumn" prefWidth="100.0" text="Country" />
+            <TableColumn fx:id="clubColumn" prefWidth="100.0" text="Club" />
+            <TableColumn fx:id="weeklySalaryColumn" prefWidth="100.0" text="Weekly Salary" />
+        </columns>
+    </TableView>
+
+</VBox>

@@ -1,0 +1,46 @@
+/* General style for VBox */
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+    -fx-padding: 20px;
+    -fx-min-width: 800px; /* Set a minimum width to ensure both dialogs have the same size */
+    -fx-min-height: 600px; /* Set a minimum height to ensure both dialogs have the same size */
+}
+
+/* Style the OK button (same for both) */
+.button {
+    -fx-background-color: #27ae60; /* Solid green */
+    -fx-text-fill: white;
+    -fx-font-size: 18px; /* Increased font size */
+    -fx-padding: 12px 24px; /* Increased padding */
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #2ecc71; /* Lighter green on hover */
+}
+
+/* Label style (same for both) */
+.label {
+    -fx-font-size: 22px; /* Increased font size */
+    -fx-text-fill: black; /* Standard black text */
+}
+
+/* TableView Style (same for both) */
+.table-view {
+    -fx-background-color: transparent; /* No background padding */
+    -fx-border-color: transparent; /* No border */
+}
+
+/* TableColumn Header Style (same for both) */
+.table-column-header {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px; /* Uniform font size */
+    -fx-text-fill: black; /* Standard black text */
+}
+
+/* Style for table column text (same for both) */
+.table-cell {
+    -fx-font-size: 16px; /* Uniform font size */
+    -fx-text-fill: black; /* Standard black text */
+}

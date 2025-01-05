@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22.0"
+            prefWidth="600" prefHeight="400"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.SearchResultsController">
+    <TableView fx:id="resultsTable" layoutX="50" layoutY="50" prefWidth="400" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Name" prefWidth="130"/>
+            <TableColumn fx:id="positionColumn" text="Position" prefWidth="130"/>
+            <TableColumn fx:id="salaryColumn" text="Weekly Salary" prefWidth="130"/>
+        </columns>
+    </TableView>
+</AnchorPane>

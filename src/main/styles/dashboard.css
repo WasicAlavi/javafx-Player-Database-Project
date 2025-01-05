@@ -1,0 +1,115 @@
+/* General VBox Style */
+.root {
+    -fx-background-color: #f0f8ff;
+    -fx-padding: 20 0 0 0; /* Top padding of 20px, no padding on other sides */
+}
+
+/* General Button Style */
+.button {
+    -fx-background-radius: 5; /* Rounded corners */
+    -fx-font-size: 16px; /* Increased font size for better readability */
+    -fx-text-fill: white; /* White text for contrast */
+    -fx-padding: 10 20; /* Increased padding for larger buttons */
+    -fx-border-color: transparent;
+    -fx-background-color: #2c3e50; /* Fallback dark blue color for buttons */
+}
+
+/* Gradient Background for Buttons */
+/* Gradient Background for Buttons */
+#buyButton {
+    -fx-background-color: linear-gradient(to right, #2ecc71, #27ae60); /* Green Gradient */
+}
+
+#sellButton {
+    -fx-background-color: linear-gradient(to right, #e67e22, #d35400); /* Orange Gradient */
+}
+
+#refreshButton {
+    -fx-background-color: linear-gradient(to right, #3498db, #2980b9); /* Blue Gradient */
+}
+
+#searchButton {
+    -fx-background-color: linear-gradient(to right, #2ecc71, #27ae60); /* Green Gradient */
+}
+
+#backButton {
+    -fx-background-color: linear-gradient(to right, #e74c3c, #c0392b); /* Red Gradient */
+}
+
+/* New Golden Border for View Dashboard Button */
+#viewPlayerDatabaseButton {
+    -fx-border-color: gold; /* Golden border */
+    -fx-border-width: 2px; /* Set the border width */
+    -fx-border-radius: 5; /* Rounded corners for the border */
+}
+
+/* Hover Effect for Buttons */
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0, 0);
+}
+
+#buyButton:hover {
+    -fx-background-color: linear-gradient(to right, #58d68d, #2ecc71); /* Lighter Green Hover */
+}
+
+#sellButton:hover {
+    -fx-background-color: linear-gradient(to right, #f39c12, #e67e22); /* Lighter Orange Hover */
+}
+
+#refreshButton:hover {
+    -fx-background-color: linear-gradient(to right, #5dade2, #3498db); /* Lighter Blue Hover */
+}
+
+#searchButton:hover {
+    -fx-background-color: linear-gradient(to right, #58d68d, #2ecc71); /* Lighter Green Hover */
+}
+
+#backButton:hover {
+    -fx-background-color: linear-gradient(to right, #f1948a, #e74c3c); /* Lighter Red Hover */
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: transparent; /* Semi-transparent white */
+    -fx-border-color: transparent; /* Semi-transparent light blue border */
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10 0 0 0; /* Top padding of 10px, no padding on other sides */
+}
+
+/* Table Cell Styling */
+.table-row-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Default transparent background */
+    -fx-text-fill: #2c3e50; /* Dark text for readability */
+    -fx-font-size: 15px;
+    -fx-border-color: rgba(204, 231, 245, 0.95); /* Semi-transparent border */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgba(248, 252, 254, 0.85); /* Light blue with 50% opacity */
+}
+
+.table-row-cell:even {
+    -fx-background-color: rgba(255, 255, 255, 0.85); /* White with 50% opacity */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(52, 152, 219, 0.95); /* Blue with 80% opacity */
+    -fx-text-fill: white; /* Ensure selected text is white */
+}
+
+/* Table Header Styling */
+.table-column-header {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    -fx-border-color: rgba(204, 231, 245, 0.8); /* Semi-transparent border */
+}
+
+/* Scroll Bar Styling */
+.scroll-bar {
+    -fx-background-color: rgba(232, 244, 252, 0.8); /* Semi-transparent scroll bar background */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(178, 223, 245, 0.8); /* Semi-transparent thumb */
+    -fx-background-radius: 5;
+}
